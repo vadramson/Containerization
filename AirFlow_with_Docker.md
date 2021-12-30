@@ -40,3 +40,8 @@ Then create and export an environment so you can easily access all the files wit
       airflow-docker$ mkdir ./dags ./plugins ./logs
       
       airflow-docker$ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+      
+      
+## Initialize AirFlow instance with the following command
+
+      airflow-docker$ docker-compose up airflow-init
