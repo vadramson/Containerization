@@ -53,4 +53,16 @@ Finally enter the next command to start all the services needed to run AirFlow
 
       airflow-docker$ docker-compose up
       
+# 2 AirFlow Web Server
+
+You can access the webserver web interface from http://localhost:8080/       
+
+# 3 Using the AirFlow API
+  
+To use the API, modify the AirFlow .yaml file _environment_ section by adding the following  line of code
+
+      AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
       
+Then restart docker-compose      
+  
+
