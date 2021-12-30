@@ -45,3 +45,8 @@ Then create and export an environment so you can easily access all the files wit
 ## Initialize AirFlow instance with the following command
 
       airflow-docker$ docker-compose up airflow-init
+      
+      
+This is in charge of running the _airflow-init_ service that downloads AirFlow Docker image and its dependencies and creates an AirFlow user with password airflow        
+      
+      
