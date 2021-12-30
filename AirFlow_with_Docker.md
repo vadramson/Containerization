@@ -59,10 +59,12 @@ You can access the webserver web interface from http://localhost:8080/
 
 # 3 Using the AirFlow API
   
-To use the API, modify the AirFlow .yaml file _environment_ section by adding the following  line of code
+To use the API, modify the AirFlow .yaml file _environment_ section by adding the following  line of code if not already present
 
       AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
       
-Then restart docker-compose      
+Then restart docker-compose by
+
+      $ docker-compose down && docker-compose up
   
 
