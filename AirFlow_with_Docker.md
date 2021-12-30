@@ -16,3 +16,27 @@ Follow the instructions to get it installed
    [You can Download and install Docker-compose from here](https://docs.docker.com/compose/install/)
    
    Follow the instructions to get it installed
+
+## On windows 
+You need to download and install [WLS2 Here](https://docs.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) and follow the instructions to install. 
+
+Once installed, Next step...
+
+## Create folder and configure for AirFlow installation
+
+From terminal create a directory and download the latest AirFlow .yaml file. 
+Commands below
+
+      $  mkdir airflow-docker
+      
+      $ cd airflow-docker
+      
+Download the latest AirFlow .yaml file [here](https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml) and copy it into the irflow-docker.
+
+From your terminal within the airflow-docker folder, crete the ./dags ./plugins ./logs folders
+
+Then create and export an environment so you can easily access all the files with the same permission.
+
+      airflow-docker$ mkdir ./dags ./plugins ./logs
+      
+      airflow-docker$ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
