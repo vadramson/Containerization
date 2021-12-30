@@ -13,5 +13,6 @@ Follow the instructions to get it installed
 
 
     *If you are not on windows then you need to seperately install docker-compose.
-    [You can Download and install Docker-compose from here](https://docs.docker.com/compose/install/)
-    Follow the instructions to get it installed
+   [You can Download and install Docker-compose from here](https://docs.docker.com/compose/install/)
+   
+   Follow the instructions to get it installed
